@@ -3,7 +3,7 @@ pkgconfig_DATA  = libeditline.pc
 doc_DATA        = README.md LICENSE
 EXTRA_DIST      = README.md LICENSE ChangeLog.md INSTALL.md
 SUBDIRS         = src include man examples
-
+ACLOCAL_AMFLAGS = -I m4
 ## Generate .deb package
 package build-deb:
 	@dpkg-buildpackage -uc -us
